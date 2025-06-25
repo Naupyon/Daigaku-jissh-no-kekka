@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="content">
+    <h2>Daftar Tiket Pesawat</h2>
+    <form action="UasPesan.html" method="get">
+      <table class="tabel-tiket" border="1" cellpadding="10" cellspacing="0">
+        <tr>
+          <th>Pilih</th>
+          <th>Maskapai</th>
+          <th>Gambar</th>
+          <th>Rute</th>
+          <th>Harga</th>
+        </tr>
+        <tr>
+          <td><input type="radio" name="tiket" value="Garuda - Jakarta - Bali"></td>
+          <td>Garuda</td>
+          <td><img src="foto/garuda.png" width="100"></td>
+          <td>Jakarta - Bali</td>
+          <td>Rp 1.200.000</td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="tiket" value="AirAsia - Jakarta - Kuala Lumpur"></td>
+          <td>AirAsia</td>
+          <td><img src="foto/airasia.png" width="100"></td>
+          <td>Jakarta - Kuala Lumpur</td>
+          <td>Rp 850.000</td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="tiket" value="AirAsia - Jakarta - Singapura"></td>
+          <td>Citilink</td>
+          <td><img src="foto/citilink.png" width="100"></td>
+          <td>Jakarta - Singapura</td>
+          <td>Rp 1.050.000</td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="tiket" value="AirAsia - Banjarmasin - Amerika"></td>
+          <td>Batik Air</td>
+          <td><img src="foto/batik-air.png" width="100"></td>
+          <td>Banjarmasin - Amerika</td>
+          <td>Rp 1.950.000</td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="tiket" value="AirAsia - Banjarbaru - Singapura"></td>
+          <td>Lion Air</td>
+          <td><img src="foto/lion air.png" width="100"></td>
+          <td>Banjarbaru - Singapura</td>
+          <td>Rp 900.000</td>
+        </tr>
+      </table>
+      <br>
+      <button type="submit">Pesan Tiket</button>
+    </form>
+  </div>
+</body>
+</html>
