@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" spacing="15.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.praktikum_modul_7.YoyoTrickController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label text="Yoyo TrickStyle Manager">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+    </Label>
+
+    <VBox spacing="10.0">
+        <TextField fx:id="txtPlayerName" promptText="Nama Pemain" />
+        <ComboBox fx:id="cmbStyle" prefWidth="1500.0" promptText="Pilih Trick Style" />
+    </VBox>
+
+    <HBox alignment="CENTER" spacing="10.0">
+        <Button onAction="#onAdd" text="Add" />
+        <Button onAction="#onUpdate" text="Update" />
+        <Button onAction="#onDelete" text="Delete" />
+        <Button onAction="#onClear" text="Clear Form" />
+    </HBox>
+
+    <Label text="Daftar Data Pemain" />
+
+    <TableView fx:id="table" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="colId" text="ID" prefWidth="80.0" />
+            <TableColumn fx:id="colName" text="Player Name" prefWidth="200.0" />
+            <TableColumn fx:id="colStyle" text="Trick Style" prefWidth="150.0" />
+        </columns>
+    </TableView>
+</VBox>
